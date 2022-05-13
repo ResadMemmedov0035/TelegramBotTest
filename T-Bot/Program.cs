@@ -5,7 +5,7 @@ using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.Payments;
 using Telegram.Bot.Types.ReplyMarkups;
-using static T_Bot.SubscriptionPlanInMemoryDb;
+using static T_Bot.SubPlanDetails;
 
 string providerTokenSG = "1877036958:TEST:3b4911ec93d4eca8df3201e836bca0b6567824b4"; // provider: Smart-Glocal (TEST)
 string providerTokenYoo = "381764678:TEST:37158"; // provider: Yoo-Kassa (TEST)
@@ -66,7 +66,7 @@ botClient.StartReceiving(async (bot, update, token) =>
     //    await bot.SendInvoiceAsync(
     //        chatId, 
     //        _1MonthSubTitle, 
-    //        _1MonthSubDetail, 
+    //        _1MonthSubDetail,
     //        "Test Payload", 
     //        providerTokenStripe, 
     //        "USD",
